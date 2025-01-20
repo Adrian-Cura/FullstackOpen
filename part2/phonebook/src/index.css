@@ -1,0 +1,23 @@
+.success {
+  background-color: aquamarine;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  max-width: fit-content;
+  font-weight: bold;
+  padding: 2px;
+  font-size: larger;
+  margin-bottom: 2px;
+}
+
+.error {
+  background-color: tomato;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  max-width: fit-content;
+  font-weight: bold;
+  padding: 2px;
+  font-size: larger;
+  margin-bottom: 2px;
+}
