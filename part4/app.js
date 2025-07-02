@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const config = require("./utils/config");
 const logger = require("./utils/logger");
 const loginRouter = require("./controllers/login");
+const testingRouter = require("./controllers/testingRouter");
 
 const middleware = require("./utils/middleware");
 
@@ -28,6 +29,10 @@ app.use("/api/login", loginRouter);
 app.use(middleware.tokenExtractor);
 app.use("/api/blogs", blogsRouter);
 app.use("/api/users", usersRouter);
+
+if (process.env.NODE_ENV === "test") {
+  app.use("/api/testing", testingRouter);
+}
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);

@@ -27,6 +27,7 @@ userSchema.set("toJSON", {
   },
 });
 
-const User = mongoose.model("User", userSchema);
+const collectionName =
+  process.env.NODE_ENV === "test" ? "users_tests" : "users";
 
-module.exports = User;
+module.exports = mongoose.model("User", userSchema, collectionName);

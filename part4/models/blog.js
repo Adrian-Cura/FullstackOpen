@@ -28,4 +28,7 @@ blogSchema.set("toJSON", {
   },
 });
 
-module.exports = mongoose.model("Blog", blogSchema);
+const collectionName =
+  process.env.NODE_ENV === "test" ? "blogs_tests" : "blogs";
+
+module.exports = mongoose.model("Blog", blogSchema, collectionName);

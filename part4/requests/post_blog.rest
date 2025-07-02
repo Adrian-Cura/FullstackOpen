@@ -1,12 +1,12 @@
 POST   http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVscHJ1ZWJhcyIsImlkIjoiNjgyZGM5NGNhOTY2MzMzY2MyOTg4NGY4IiwiaWF0IjoxNzQ3ODMxMTQwLCJleHAiOjE3NDc4MzQ3NDB9.nMSzfEBafZnHmjwuTyewCcRC9FqRl-5Fooby9uJJgYQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJsYWNrYWlvbiIsImlkIjoiNjg2NDJmYjA3Yzg4NDczZTFkMGNmNDQwIiwiaWF0IjoxNzUxMzk2NDMzLCJleHAiOjE3NTE0MDAwMzN9.SYIBGcrjwUTdqbjgnAhzTZ1J4DIH44-Cf3rPP3-IPV8
 
 {
-  "title": "pruebas variadas",
-  "author": "El Pruebas",
-  "url": "pruebas.com",
-  "likes": 181,
+  "title": "Blog de Black",
+  "author": "Black AioN",
+  "url": "aion.com",
+  "likes": 205,
   "userId": "682dc94ca966333cc29884f8"
 }
 
